@@ -5,6 +5,7 @@
 // --------------------------------------------------------------------------------------
 function reloadGame() {
     // hide the sections that are not needed for the startup
+    $("#restart").hide();
     $(".question_answer").hide();
     $(".correct_wrong").hide();
 
@@ -31,7 +32,16 @@ function displayAnswer() {
 // --------------------------------------------------------------------------------------
 $(document).ready(function() {
 
+    // This should only ever happen on the start of the initial load of the game
     $('body').on('click', '#start', function () { 
+        
+        $(".start").hide();   
+        displayQuestion();  
+
+    });
+
+    // This should only ever happen on the re-start of the game
+    $('body').on('click', '#restart', function () { 
         
         $(".start").hide();   
         displayQuestion();  
