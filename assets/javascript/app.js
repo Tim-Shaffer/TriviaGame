@@ -41,11 +41,10 @@ $(document).ready(function() {
     $('body').on('click', '.answers', function () { 
        
         displayAnswer();
-        
+
     });
 
     reloadGame();
-
 
 });
 // --------------------------------------------------------------------------------------
