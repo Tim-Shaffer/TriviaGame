@@ -14,9 +14,16 @@ body {
   }
 
   .main-target {
-    background: url("../images/concrete_seamless.png");
     background-color: darkslategrey;
     
+  }
+
+  .jumbotron {
+    background-color: darkslategrey;  
+  }
+
+  #id {
+    text-align: center;
   }
 
   
