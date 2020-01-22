@@ -43,95 +43,72 @@
 
         </div>
 
-            <div class="row main-target p-4">
-
-                <div class="col-sm-12">
-                
-                    <div class="jumbotron jumbotron-fluid">
-
-                        <div class="container-fluid">
-
-                            <div class="row question">
-
+            
+        <div class="row jumbotron jumbotron-fluid mb-5 mh-100">
+            <div class="col-sm-12 my-5">
+                        <!-- The start section will be shown on the page load and then hidden after the Start button is selected -->
+                        <section class="start">
+                            <div class="row p-5">
                                 <div class="col-sm-2"></div>
-
-                                <div class="col-sm-8" id="updates">
-
-                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">Question</button>
-
+                                <div class="col-sm-8">
+                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">Start</button>
                                 </div>
-
                                 <div class="col-sm-2"></div>
-
                             </div>
+                        </section>
 
-                            <div class="row answer1 p-2">
-
+                        <!-- The question and Answer Section will be updated with questions and answers and shown/hidden depending upon actions -->
+                        <section class="question_answer">
+                            <div class="row p-5">
                                 <div class="col-sm-2"></div>
-
-                                <div class="col-sm-8" id="updates">
-
-                                    <!-- Start of the game with a Start Button  -->
-                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">START</button>
-
+                                <div class="col-sm-8">
+                                    <p id="question">Questions will go here </p>
                                 </div>
-
                                 <div class="col-sm-2"></div>
-
                             </div>
-
-                            <div class="row answer2 p-2">
-
+                            <div class="row p-2">
                                 <div class="col-sm-2"></div>
-
-                                <div class="col-sm-8" id="updates">
-
-                                    <!-- Start of the game with a Start Button  -->
-                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">START</button>
-
+                                <div class="col-sm-8">
+                                    <button type="button" class="btn btn-outline-success btn-lg btn-block answers" id="answer1">Answer</button>
                                 </div>
-
                                 <div class="col-sm-2"></div>
-
                             </div>
-
-                            <div class="row answer3 p-2">
-
+                            <div class="row p-2">
                                 <div class="col-sm-2"></div>
-
-                                <div class="col-sm-8" id="updates">
-
-                                    <!-- Start of the game with a Start Button  -->
-                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">START</button>
-
+                                <div class="col-sm-8">
+                                    <button type="button" class="btn btn-outline-success btn-lg btn-block answers" id="answer2">Answer</button>
                                 </div>
-
                                 <div class="col-sm-2"></div>
-
                             </div>
-
-                            <div class="row answer4 p-2">
-
+                            <div class="row p-2">
                                 <div class="col-sm-2"></div>
-
-                                <div class="col-sm-8" id="updates">
-
-                                    <!-- Start of the game with a Start Button  -->
-                                    <button type="button" class="btn btn-outline-success btn-lg btn-block" id="start">START</button>
-
+                                <div class="col-sm-8">
+                                    <button type="button" class="btn btn-outline-success btn-lg btn-block answers" id="answer3">Answer</button>
                                 </div>
-
                                 <div class="col-sm-2"></div>
-
                             </div>
+                            <div class="row p-2">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <button type="button" class="btn btn-outline-success btn-lg btn-block answers" id="answer4">Answer</button>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                        </section>
 
-                        </div>
-
-                    </div>
-
-                </div>
-
+                        <!-- The correct_wrong section will display whether the guess was right or wrong -->
+                        <section class="correct_wrong">
+                            <div class="row p-5">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8" id="correct_wrong">
+                                    <p>I WILL BE SHOWING  WHETHER THE ANSWER WAS CORRECT OR NOT HERE</p>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                        </section>
             </div>
+        </div>
+            
 
     </div>
 

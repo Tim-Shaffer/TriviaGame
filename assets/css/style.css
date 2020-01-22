@@ -19,7 +19,8 @@ body {
   }
 
   .jumbotron {
-    background-color: darkslategrey;  
+    background-color: darkslategrey;
+    height: 600px;  
   }
 
   #id {
