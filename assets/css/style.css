@@ -4,7 +4,9 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("../images/concrete_seamless.png");
+    /* From - https://www.agernic.com/css-tutorial/css-background-image-size-to-fit-screen.html  - to make the background image full screen */
+    background: url("../images/Quizzes1.jpg") no-repeat center center fixed;
+    background-size: 100%;
   }
 
   
