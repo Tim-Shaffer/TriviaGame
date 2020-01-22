@@ -1,4 +1,6 @@
 // JavaScript and jQuery will be added here
+// Variable showAnswer will hold the setInterval for time to show the Answer
+var showAnswer;
 
 // --------------------------------------------------------------------------------------
 // function to initially load the game when start button is clicked or reload when the restart is clicked
@@ -7,7 +9,7 @@ function reloadGame() {
     // hide the sections that are not needed for the startup
     $("#restart").hide();
     $(".question_answer").hide();
-    $(".correct_wrong").hide();
+    $(".answer-section").hide();
 
 };
 // --------------------------------------------------------------------------------------
@@ -16,6 +18,9 @@ function reloadGame() {
 
 function displayQuestion() {
     
+    // Clear the Answer Interval before showing the next question
+    clearInterval(showAnswer);
+    $(".answer-section").hide();
     $(".question_answer").show(); 
 
 }
@@ -23,7 +28,9 @@ function displayQuestion() {
 function displayAnswer() {
      
     $(".question_answer").hide();   
-    $(".correct_wrong").show();
+    $(".answer-section").show();
+    // Allow the Answer Information to display for 5 seconds
+    showAnswer = setInterval(displayQuestion, 5000);
 
 }
 
