@@ -9,4 +9,14 @@ body {
     background-size: 100%;
   }
 
+  .heading {
+    background-color: darkslategrey;
+  }
+
+  .main-target {
+    background: url("../images/concrete_seamless.png");
+    background-color: darkslategrey;
+    
+  }
+
   
