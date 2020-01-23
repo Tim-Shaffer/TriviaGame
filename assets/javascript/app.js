@@ -2,6 +2,11 @@
 // Variable showAnswer will hold the setInterval for time to show the Answer
 var showAnswer;
 var showQuestion;
+//  Variable that will hold our interval ID when we execute
+//  the "run" function
+var intervalId;
+
+var number = 20;
 
 // --------------------------------------------------------------------------------------
 // function to initially load the game when start button is clicked or reload when the restart is clicked
@@ -25,11 +30,13 @@ function displayQuestion() {
     clearInterval(showAnswer);
     $(".answer-section").hide();
 
-    // Set the Question Timer Interval to 20 seconds
-    showQuestion = setInterval(displayAnswer, 5000);
     $(".question-section").show(); 
+    // Set the Question Timer Interval to 20 seconds
+    number = 20;
+    clearInterval(showQuestion);
+    showQuestion = setInterval(decrement, 1000);    
 
-}
+};
 
 function displayAnswer() {
      
@@ -41,7 +48,30 @@ function displayAnswer() {
     // Allow the Answer Information to display for 5 seconds
     showAnswer = setInterval(displayQuestion, 5000);
 
-}
+};
+
+//  The decrement function.
+function decrement() {
+
+    //  Decrease number by one.
+    number--;
+
+    //  Show the number in the #timer-display tag.
+    $("#timer-display").html("<p>Time Remaining:  " + number + " Seconds</p>");
+
+    if (number === 0) {
+
+        clearInterval(displayQuestion);
+        displayAnswer();
+
+      };
+
+};
+
+
+
+
+
 
 // --------------------------------------------------------------------------------------
 // This function enacts when the html document has been loaded and is ready
@@ -82,3 +112,4 @@ $(document).ready(function() {
 //     $("#restart").on("click", displayQuestion);
 //     $("#start").on("click", displayQuestion);
 //   };
+
