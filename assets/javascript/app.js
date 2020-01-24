@@ -24,6 +24,7 @@ function reloadGame() {
     $("#restart").hide();
     $(".question-section").hide();
     $(".answer-section").hide();
+    $(".result-section").hide();
 
     // reset counters
     questionCounter = 0;
@@ -57,7 +58,8 @@ function displayQuestion() {
     $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
 
     // show the question
-    $(".question-section").show(); 
+    $(".question-section").show();
+    questionCounter ++; 
     
     // run the timer countdown process
     showQuestion = setInterval(decrement, 1000);    
@@ -78,11 +80,12 @@ function displayAnswer() {
     clearInterval(showQuestion);
 
     // set the answer information into the answer section and show it
-    $("#answer").text(answer);
+    $("#answer").text(message);
+    // **** add in the actual answer information before showing the section! ****
     $(".answer-section").show();
 
-    //There will be 8 questions
-    if (questionCounter === 8) {
+    //There will be 10 questions
+    if (questionCounter === 10) {
 
         // Allow the Answer Information to display for 5 seconds  ****
         showAnswer = setInterval(displayEndOfGame, 1000);
@@ -111,15 +114,7 @@ function checkAnswer() {
     } 
     // an answer was picked before the time expired
     else {
-        // **** validate the answer that was clicked vs the correct answer ****
-        // randomize the test 
-        var checkTest = Math.floor(Math.random() * 2);
-        if (checkTest === 1) {
-            isAnswerRight = true;
-        };
-        // ****
-
-        // a correct answer was selected
+        // validate the answer that was clicked was the correct answer 
         if (isAnswerRight) {
             
             message = "Correct!";
@@ -137,7 +132,6 @@ function checkAnswer() {
     };
 
     // display the answer  ****
-    // $().text(message);
     displayAnswer();
     
 };
@@ -178,11 +172,16 @@ function displayEndOfGame() {
     // hide the answer section 
     $(".answer-section").hide();
     
-    // display the results - **** change to a screen display ****
-    // $("#result-section").show();
-    console.log(correctAnswer);
-    console.log(incorrectAnswer);
-    console.log(timeOut);
+    // make sure the result section is empty before reloading with current results
+    $("#result-section").empty();
+    
+    // display the results - 
+    $("#result-section").append('<p>Game Over.  Here are your results: </p>');
+    $("#result-section").append('<p>Correct Answers:  ' + correctAnswer + '</p>');
+    $("#result-section").append('<p>Incorrect Answers:  ' + incorrectAnswer + '</p>');
+    $("#result-section").append('<p>Unanswered:  ' + timeOut + '</p>');
+    $(".result-section").show();
+
 
     // show the start section with just the restart button visible
     $("#start").hide();
@@ -216,7 +215,19 @@ $(document).ready(function() {
 
     // the click of an answer button
     $('body').on('click', '.answers', function () { 
-       
+
+        var buttonID;
+
+        if ($(this).hasClass("right")) {
+            isAnswerRight = true;
+            // ****  remove the class for testing **** 
+            buttonID = $(this).attr('id');
+            $("#" + buttonID).removeClass("right");
+        }
+        else {
+            isAnswerRight = false;
+        };
+
         checkAnswer();
 
     });
