@@ -1,4 +1,10 @@
-// JavaScript and jQuery will be added here
+// **** Questions *****
+var questionsToUse = ["question1"];
+var choice = {
+    Question: "What Movie Tells The Story of A Boy And His Alien?",
+    CorrectAnswer: "E.T",
+    IncorrectAnswer: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+}
 // variables to hold SetIntervals
 var showAnswer;
 var showQuestion;
@@ -53,6 +59,18 @@ function displayQuestion() {
 
     // Set the Question Timer Interval to 20 seconds
     number = 20;
+
+    // ***** GET the Question and Build the Section ****
+    $("#question").text(choice.Question);
+    // **** randomly select which answer will be the correct answer *****
+    var rightAnswer = Math.floor(Math.random() * 4);  // creates a range from 0 to 3
+    $("#answer" + rightAnswer).text(choice.CorrectAnswer).addClass("right");
+    for (i=0; i < choice.IncorrectAnswer.length; i++) {
+        if (i != rightAnswer) {
+            $("#answer" + i).text(choice.IncorrectAnswer[i]);
+        }
+    };
+    // **** 
     
     //  Show the number in the #timer-display tag.
     $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
@@ -223,6 +241,7 @@ $(document).ready(function() {
             // ****  remove the class for testing **** 
             buttonID = $(this).attr('id');
             $("#" + buttonID).removeClass("right");
+            // **** Need to remove the "right" class upon timeout and incorrect answers
         }
         else {
             isAnswerRight = false;
