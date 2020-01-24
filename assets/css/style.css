@@ -26,5 +26,9 @@ body {
   #id {
     text-align: center;
   }
+  
+  .answers {
+    border: none;
+  }
 
   
