@@ -1,10 +1,59 @@
 // **** Questions *****
-var questionsToUse = ["question1"];
-var choice = {
-    Question: "What Movie Tells The Story of A Boy And His Alien?",
-    CorrectAnswer: "E.T",
-    IncorrectAnswer: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+const questionsAvialable = [
+{
+    Question: "1) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "2) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "3) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "4) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "5) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "6) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "7) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "8) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "9) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "10) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
 }
+];
+
+var questionToAsk = [];
+
 // variables to hold SetIntervals
 var showAnswer;
 var showQuestion;
@@ -17,6 +66,7 @@ var questionCounter = 0;
 
 // booleans
 var isAnswerRight = false; 
+var questionsLoaded = false;
 
 var number = 20;
 var message = "";
@@ -41,14 +91,51 @@ function reloadGame() {
     // reset boolean
     isAnswerRight =false;
 
+    // **** set the Question To Ask Array to be used later
+    loadQuestionArray();
+
 };
 // --------------------------------------------------------------------------------------
 // end of the reloadGame() function
 // --------------------------------------------------------------------------------------
 
+function loadQuestionArray() {
+    questionsLoaded = false;
+    // reset the array to empty
+    questionToAsk = [];
+
+    var newValue = 0
+
+    // randomly set the values for the questions by updating the array 
+    //  **** this will be 10 in the end 
+    for (i=0; i < 5; i++ ) {
+        // calculate a number between 0 and 9
+        newValue = Math.floor(Math.random() * 10);  // ****
+        // make sure that each value is unique to the array
+        if (questionToAsk.indexOf(newValue) === -1 ) {
+
+            questionToAsk.push(newValue);
+
+        }    
+        // number was already found in the array so reset the iterator back 1 so the loop will try again
+        else {
+            i--;
+        };
+        
+    };
+
+    questionsLoaded = true;
+};
+
 // --------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------
 function displayQuestion() {
+
+    // **** add the check of questionsLoaded first
+
+    // **** plan is to have 30 questions in an array questionsAvailable and a separate array gets loaded with 10 indexes to use
+    //  the questioncounter will be used to access the array of indexes to then grab that index for the question from the available ones
+    var newQuestion = questionToAsk[questionCounter];
 
     // hide the start section if still being shown
     $(".start").hide(); 
@@ -61,13 +148,13 @@ function displayQuestion() {
     number = 20;
 
     // ***** GET the Question and Build the Section ****
-    $("#question").text(choice.Question);
+    $("#question").text(questionsAvialable[newQuestion].Question);
     // **** randomly select which answer will be the correct answer *****
     var rightAnswer = Math.floor(Math.random() * 4);  // creates a range from 0 to 3
-    $("#answer" + rightAnswer).text(choice.CorrectAnswer).addClass("right");
-    for (i=0; i < choice.IncorrectAnswer.length; i++) {
+    $("#answer" + rightAnswer).text(questionsAvialable[newQuestion].Answer).addClass("right");
+    for (i=0; i < questionsAvialable[newQuestion].WrongAnswers.length; i++) {
         if (i != rightAnswer) {
-            $("#answer" + i).text(choice.IncorrectAnswer[i]);
+            $("#answer" + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass("right");;
         }
     };
     // **** 
@@ -76,8 +163,8 @@ function displayQuestion() {
     $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
 
     // show the question
-    $(".question-section").show();
     questionCounter ++; 
+    $(".question-section").show();
     
     // run the timer countdown process
     showQuestion = setInterval(decrement, 1000);    
@@ -102,8 +189,8 @@ function displayAnswer() {
     // **** add in the actual answer information before showing the section! ****
     $(".answer-section").show();
 
-    //There will be 10 questions
-    if (questionCounter === 10) {
+    //There will be 10 questions   ****
+    if (questionCounter === 5) {
 
         // Allow the Answer Information to display for 5 seconds  ****
         showAnswer = setInterval(displayEndOfGame, 1000);
