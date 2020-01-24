@@ -49,9 +49,112 @@ const questionsAvialable = [
     Question: "10) What Movie Tells The Story of A Boy And His Alien?",
     Answer: "E.T",
     WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "11) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "12) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "13) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "14) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "15) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "16) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "17) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "18) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "19) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "20) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "21) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "22) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "23) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "24) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "25) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "26) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "27) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "28) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "29) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+},
+{
+    Question: "30) What Movie Tells The Story of A Boy And His Alien?",
+    Answer: "E.T",
+    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
 }
 ];
+// --------------------------------------------------------------------------------------
 
+// --------------------------------------------------------------------------------------
+// array to be used to hold the randomly selected questionsAvailable indexes
 var questionToAsk = [];
 
 // variables to hold SetIntervals
@@ -70,6 +173,8 @@ var questionsLoaded = false;
 
 var number = 20;
 var message = "";
+var newQuestion = 0;
+// --------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------------------------
 // function to initially load the game when start button is clicked or reload when the restart is clicked
@@ -90,8 +195,9 @@ function reloadGame() {
 
     // reset boolean
     isAnswerRight =false;
+    questionsLoaded = false;
 
-    // **** set the Question To Ask Array to be used later
+    //set the Question To Ask Array to be used later
     loadQuestionArray();
 
 };
@@ -99,6 +205,9 @@ function reloadGame() {
 // end of the reloadGame() function
 // --------------------------------------------------------------------------------------
 
+// --------------------------------------------------------------------------------------
+// function to randomly set an array of indexes which pick the questions to be used
+// --------------------------------------------------------------------------------------
 function loadQuestionArray() {
     questionsLoaded = false;
     // reset the array to empty
@@ -106,11 +215,10 @@ function loadQuestionArray() {
 
     var newValue = 0
 
-    // randomly set the values for the questions by updating the array 
-    //  **** this will be 10 in the end 
-    for (i=0; i < 5; i++ ) {
-        // calculate a number between 0 and 9
-        newValue = Math.floor(Math.random() * 10);  // ****
+    // randomly set the values for the questions by updating the array for 10 questions
+    for (i=0; i < 10; i++ ) {
+        // calculate a number between 0 and 29 to represent the index of the question to use
+        newValue = Math.floor(Math.random() * 30);  
         // make sure that each value is unique to the array
         if (questionToAsk.indexOf(newValue) === -1 ) {
 
@@ -126,48 +234,57 @@ function loadQuestionArray() {
 
     questionsLoaded = true;
 };
+// --------------------------------------------------------------------------------------
+// end of the loadQuestionArray() function
+// --------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------------------------
+// function to display the question and the possible answers
 // --------------------------------------------------------------------------------------
 function displayQuestion() {
 
-    // **** add the check of questionsLoaded first
+    // can only display a question if questions have been loaded
+    if (questionsLoaded) {
 
-    // **** plan is to have 30 questions in an array questionsAvailable and a separate array gets loaded with 10 indexes to use
-    //  the questioncounter will be used to access the array of indexes to then grab that index for the question from the available ones
-    var newQuestion = questionToAsk[questionCounter];
+        //  the questioncounter will be used to access the array of indexes to then grab that index for the question from the available ones
+        newQuestion = questionToAsk[questionCounter];
 
-    // hide the start section if still being shown
-    $(".start").hide(); 
- 
-    // Clear the Answer Interval and hide the answer section before showing the next question
-    clearInterval(showAnswer);
-    $(".answer-section").hide();
-
-    // Set the Question Timer Interval to 20 seconds
-    number = 20;
-
-    // ***** GET the Question and Build the Section ****
-    $("#question").text(questionsAvialable[newQuestion].Question);
-    // **** randomly select which answer will be the correct answer *****
-    var rightAnswer = Math.floor(Math.random() * 4);  // creates a range from 0 to 3
-    $("#answer" + rightAnswer).text(questionsAvialable[newQuestion].Answer).addClass("right");
-    for (i=0; i < questionsAvialable[newQuestion].WrongAnswers.length; i++) {
-        if (i != rightAnswer) {
-            $("#answer" + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass("right");;
-        }
-    };
-    // **** 
+        // hide the start section if still being shown
+        $(".start").hide(); 
     
-    //  Show the number in the #timer-display tag.
-    $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
+        // Clear the Answer Interval and hide the answer section before showing the question
+        clearInterval(showAnswer);
+        $("#answer").empty();
+        $(".answer-section").hide();
 
-    // show the question
-    questionCounter ++; 
-    $(".question-section").show();
-    
-    // run the timer countdown process
-    showQuestion = setInterval(decrement, 1000);    
+        // Set the Question Timer Interval to 20 seconds
+        number = 20;
+
+        //  GET the Question and Build the Section 
+        $("#question").text(questionsAvialable[newQuestion].Question);
+        
+        // randomly select which answer will be the correct answer 
+        var rightAnswer = Math.floor(Math.random() * 4);  // creates a range from 0 to 3 to correspond to the answer ids
+        // build the right answer and add the 'right' class to designate it as the right answer 
+        $("#answer" + rightAnswer).text(questionsAvialable[newQuestion].Answer).addClass("right");
+
+        // populate the remaining answers with the incorrect answers and make sure they do not have the 'right' class designation
+        for (i=0; i < questionsAvialable[newQuestion].WrongAnswers.length; i++) {
+            if (i != rightAnswer) {
+                $("#answer" + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass("right");;
+            }
+        };
+        
+        //  Show the number in the #timer-display tag.
+        $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
+
+        // show the question
+        questionCounter ++; 
+        $(".question-section").show();
+        
+        // run the timer countdown process
+        showQuestion = setInterval(decrement, 1000);
+    }  
 
 };
 // --------------------------------------------------------------------------------------
@@ -175,9 +292,9 @@ function displayQuestion() {
 // --------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------------------------
+//  function to display the correct answer
 // --------------------------------------------------------------------------------------
 function displayAnswer() {
-
     // displaying the answer so hide the question 
     $(".question-section").hide();   
 
@@ -186,19 +303,22 @@ function displayAnswer() {
 
     // set the answer information into the answer section and show it
     $("#answer").text(message);
-    // **** add in the actual answer information before showing the section! ****
+
+    // When the wrong answer was selected or it timed out,  add in the actual answer information before showing the section
+    if (!isAnswerRight) {
+        $("#answer").append('<p>The correct answer was:  ' + questionsAvialable[newQuestion].Answer + '.</p>');
+    }
+
+    // show the full answer section
     $(".answer-section").show();
 
     //There will be 10 questions   ****
     if (questionCounter === 5) {
-
         // Allow the Answer Information to display for 5 seconds  ****
         showAnswer = setInterval(displayEndOfGame, 1000);
-
     }
     // show next question
     else {
-
         // Allow the Answer Information to display for 5 seconds  ****
         showAnswer = setInterval(displayQuestion, 1000);
     };
@@ -209,6 +329,7 @@ function displayAnswer() {
 // --------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------------------------
+//  function to verify whether the correct answer was chosen or not and add a message to display the result
 // --------------------------------------------------------------------------------------
 function checkAnswer() {
     
@@ -220,20 +341,15 @@ function checkAnswer() {
     // an answer was picked before the time expired
     else {
         // validate the answer that was clicked was the correct answer 
-        if (isAnswerRight) {
-            
+        if (isAnswerRight) {    
             message = "Correct!";
-            correctAnswer++;
-            
+            correctAnswer++;    
         } 
         // an incorrect answer was selected
-        else {
-            
+        else {     
             message = "Nope!";
-            incorrectAnswer++;
-        
+            incorrectAnswer++; 
         };
-
     };
 
     // display the answer  ****
@@ -248,7 +364,6 @@ function checkAnswer() {
 //  function to decrement the timer and display - copied from in class activities (interval)
 // --------------------------------------------------------------------------------------
 function decrement() {
-
     //  Decrease number by one.
     number--;
 
@@ -257,9 +372,7 @@ function decrement() {
 
     // when time has run out, call the check answer function for processing the answer
     if (number === 0) {
-
         checkAnswer();
-
     };
 
 };
@@ -268,9 +381,9 @@ function decrement() {
 // --------------------------------------------------------------------------------------
 
 // --------------------------------------------------------------------------------------
+// function to display the end of the game statistics and allow for a restart
 // --------------------------------------------------------------------------------------
 function displayEndOfGame() {
-
     // clear the interval after displaying the answer
     clearInterval(showAnswer);
 
@@ -286,7 +399,6 @@ function displayEndOfGame() {
     $("#result-section").append('<p>Incorrect Answers:  ' + incorrectAnswer + '</p>');
     $("#result-section").append('<p>Unanswered:  ' + timeOut + '</p>');
     $(".result-section").show();
-
 
     // show the start section with just the restart button visible
     $("#start").hide();
@@ -321,14 +433,8 @@ $(document).ready(function() {
     // the click of an answer button
     $('body').on('click', '.answers', function () { 
 
-        var buttonID;
-
         if ($(this).hasClass("right")) {
             isAnswerRight = true;
-            // ****  remove the class for testing **** 
-            buttonID = $(this).attr('id');
-            $("#" + buttonID).removeClass("right");
-            // **** Need to remove the "right" class upon timeout and incorrect answers
         }
         else {
             isAnswerRight = false;
@@ -345,5 +451,3 @@ $(document).ready(function() {
 // --------------------------------------------------------------------------------------
 // end of $(document).ready(function()
 // --------------------------------------------------------------------------------------
-
-
