@@ -1,154 +1,154 @@
 // **** Questions *****
 const questionsAvialable = [
 {
-    Question: "1) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Which "Toy Story" character was voiced by Don Rickles?',
+    Answer: 'Mr. Potatoe Head',
+    WrongAnswers: ['Woody', 'Rex', 'Buzz Lightyear' , 'Hamm']
 },
 {
-    Question: "2) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'In the 1971 film "Willy Wonka & the Chocolate Factory", who played Willy Wonka?',
+    Answer: 'Gene Wilder',
+    WrongAnswers: ['Johnny Depp', 'Jack Albertson', 'Richard Pryor', 'David Kelly']
 },
 {
-    Question: "3) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'How many rooms are there, not including the hallways and the set of stairs, in the board game "Clue"?',
+    Answer: '9',
+    WrongAnswers: ['6', '8', '10' , '7']
 },
 {
-    Question: "4) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'How many points is the "Z" tile worth in Scrabble?',
+    Answer: '10',
+    WrongAnswers: ['9', '8', '7' , '2']
 },
 {
-    Question: "5) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'What is the fastest land animal?',
+    Answer: 'Cheetah',
+    WrongAnswers: ['Horse', 'Jaguar', 'Ostrich' , 'Hyena']
 },
 {
-    Question: "6) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'On the show "Mike and Molly", how did Mike and Molly meet?',
+    Answer: 'At an Overeaters Anonymous meeting',
+    WrongAnswers: ['He responds to an emergency call at her home', 'He arrests her mother', 'He arrests her sister' , 'She teaches his son']
 },
 {
-    Question: "7) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Who wrote and recorded the theme song for the "Big Bang Theory"?',
+    Answer: 'Barenaked Ladies',
+    WrongAnswers: ['Taylor Swift', 'R.E.M.', 'Smashing Pumpkins' , 'Three Dog Night']
 },
 {
-    Question: "8) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: ' Which American president appeared on the show “Laugh-in”?',
+    Answer: 'Richard Nixon',
+    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush']
 },
 {
-    Question: "9) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Who wrote the Sinead O`Connor hit "Nothing Compares 2 U"?',
+    Answer: 'Prince',
+    WrongAnswers: ['Sinead O`Connor', 'Madonna', 'Debbie Gibson' , 'Tiffany']
 },
 {
-    Question: "10) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Daniel Craig made his debut as James Bond in 2006 in what movie?',
+    Answer: 'Casino Royale',
+    WrongAnswers: ['Quantum of Solace', 'Skyfall', 'Spectre' , 'No Time to Die']
 },
 {
-    Question: "11) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'The character "Jar Jar Binks" made his first appearance in which "Star Wars" movie?',
+    Answer: 'Episode 1 – The Phantom Menace',
+    WrongAnswers: ['Episode 2 – Attack of the Clones', 'Episode 5 - The Empire Strikes Back', 'Episode 9 - The Rise of Skywalker', 'Episode 3 - Revenge of the Sith']
 },
 {
-    Question: "12) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "What was the name of the Clampetts' banker in 'The Beverly Hillbillies'?",
+    Answer: 'Milburn Drysdale',
+    WrongAnswers: ['Jethro Bodine', 'Daisy Moses', 'Margaret Drysdale' , 'Jane Hathaway']
 },
 {
-    Question: "13) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "What was Ted Danson's profession when he guest starred on the sitcom 'Taxi'?",
+    Answer: 'Hairdresser',
+    WrongAnswers: ['Doctor', 'Cab Driver', 'Electrician' , 'Plumber']
 },
 {
-    Question: "14) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'On the show "The Simpsons", Marge Simpson has the same maiden name as which former First Lady. ',
+    Answer: 'Jacqueline "Bouvier" Kennedy',
+    WrongAnswers: ['Hillary "Rodham" Clinton', 'Laura "Welch" Bush', 'Barbara "Pierce" Bush' , 'Nancy "Davis" Reagan']
 },
 {
-    Question: "15) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "What was the name of Arnold's fish on 'Different Strokes'?",
+    Answer: 'Abraham',
+    WrongAnswers: ['Willis', 'Drummond', 'Adelaide' , 'Charlene DuPrey']
 },
 {
-    Question: "16) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "On the sitcom Three's Company, what is the name 'Chrissy' short for?",
+    Answer: 'Christmas',
+    WrongAnswers: ['Christine', 'Christina', 'Christabelle' , 'Chris']
 },
 {
-    Question: "17) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "What was Roscoe's dogs name on the Dukes of Hazzard?",
+    Answer: 'Flash',
+    WrongAnswers: ['Fido', 'Fred', 'Felix' , 'Hank']
 },
 {
-    Question: "18) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "In the TV show 'Family Ties' who was Alex P. Keaton's idol?",
+    Answer: 'Richard Nixon',
+    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush']
 },
 {
-    Question: "19) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "On the TV show ALF, what was ALF's real name?",
+    Answer: 'Gordon Shumway',
+    WrongAnswers: ['George Clooney', 'Greg Kinnear', 'Gabriel Iglesias' , 'Gavin Rossdale']
 },
 {
-    Question: "20) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "What was the name of the bar/restaurant on the TV show THREE'S COMPANY?",
+    Answer: 'Regal Beagle',
+    WrongAnswers: ['Royal Dog', 'Melvilles', 'Boars Nest' , 'The Hard Rock Cafe']
 },
 {
-    Question: "21) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: "Who are you likely to meet on Philadelphia's Elfreth's Alley?",
+    Answer: 'Betsy Ross',
+    WrongAnswers: ['Kevin Bacon', 'Andy Reid', 'Brad Lidge' , 'Elmo']
 },
 {
-    Question: "22) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Where in Philadelphia is Benjamin Franklin buried?',
+    Answer: 'Christ Church',
+    WrongAnswers: ['Independence Hall', 'The Art Museum', 'City Hall' , 'University of Pennsylvania']
 },
 {
-    Question: "23) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'What is exhibited at the Mutter Museum?',
+    Answer: 'Medical Oddities',
+    WrongAnswers: ['Insects', 'Sheep', 'Cattle' , 'Dogs']
 },
 {
-    Question: "24) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'How many championships do the 4 major sprts teams in Philly have?',
+    Answer: '16',
+    WrongAnswers: ['11', '6', '10' , '9']
 },
 {
-    Question: "25) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'What year did all the major Philly sports teams make their respective championships?',
+    Answer: '1980',
+    WrongAnswers: ['2000', '1983', '1974' , '1960']
 },
 {
-    Question: "26) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Who scored 100 points in a single game as a 76er?',
+    Answer: 'Wilt Chamberlain',
+    WrongAnswers: ['Moses Malone', 'Allen Iverson', 'Kobe Bryant' , 'Julius Erving']
 },
 {
-    Question: "27) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'What was the name of the Curse that the Phillies ended in 2008?',
+    Answer: ' Curse of William Penn',
+    WrongAnswers: ['Curse of the Bambino', 'Curse of 1983', 'Curse of Philly' , 'The Mummers Curse']
 },
 {
-    Question: "28) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'Who was the only player to lose a Stanley Cup and win series MVP?',
+    Answer: 'Ron Hextall',
+    WrongAnswers: ['Wayne Gretzky', 'Bobby Clarke', 'Eric Lindross' , 'Simon Gagne']
 },
 {
-    Question: "29) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'On the TV show "Everybody Loves Raymond", what type of reenactment does Frank participate in?',
+    Answer: 'Civil War Reenactment',
+    WrongAnswers: ['World War II Reenactment', 'Korean War Reenactment', 'Renaissance Reenactment' , 'Reenactment of The Last Supper']
 },
 {
-    Question: "30) What Movie Tells The Story of A Boy And His Alien?",
-    Answer: "E.T",
-    WrongAnswers: ["Bicentennial Man", "Dr Alien", "The Color Purple" , "Grease"]
+    Question: 'On the TV show "Everybody Loves Raymond", what state did Marie and Frank once forget Robert in?',
+    Answer: 'New Mexico',
+    WrongAnswers: ['Oklahoma', 'Utah', 'Florida' , 'Nevada']
 }
 ];
 // --------------------------------------------------------------------------------------
@@ -172,7 +172,7 @@ var isAnswerRight = false;
 var questionsLoaded = false;
 
 var number = 20;
-var message = "";
+var message = '';
 var newQuestion = 0;
 // --------------------------------------------------------------------------------------
 
@@ -182,10 +182,10 @@ var newQuestion = 0;
 function reloadGame() {
     
     // hide the sections that are not needed for the start of the game
-    $("#restart").hide();
-    $(".question-section").hide();
-    $(".answer-section").hide();
-    $(".result-section").hide();
+    $('#restart').hide();
+    $('.question-section').hide();
+    $('.answer-section').hide();
+    $('.result-section').hide();
 
     // reset counters
     questionCounter = 0;
@@ -250,37 +250,37 @@ function displayQuestion() {
         newQuestion = questionToAsk[questionCounter];
 
         // hide the start section if still being shown
-        $(".start").hide(); 
+        $('.start').hide(); 
     
         // Clear the Answer Interval and hide the answer section before showing the question
         clearInterval(showAnswer);
-        $("#answer").empty();
-        $(".answer-section").hide();
+        $('#answer').empty();
+        $('.answer-section').hide();
 
         // Set the Question Timer Interval to 20 seconds
         number = 20;
 
         //  GET the Question and Build the Section 
-        $("#question").text(questionsAvialable[newQuestion].Question);
+        $('#question').text(questionsAvialable[newQuestion].Question);
         
         // randomly select which answer will be the correct answer 
         var rightAnswer = Math.floor(Math.random() * 4);  // creates a range from 0 to 3 to correspond to the answer ids
         // build the right answer and add the 'right' class to designate it as the right answer 
-        $("#answer" + rightAnswer).text(questionsAvialable[newQuestion].Answer).addClass("right");
+        $('#answer' + rightAnswer).text(questionsAvialable[newQuestion].Answer).addClass('right');
 
         // populate the remaining answers with the incorrect answers and make sure they do not have the 'right' class designation
         for (i=0; i < questionsAvialable[newQuestion].WrongAnswers.length; i++) {
             if (i != rightAnswer) {
-                $("#answer" + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass("right");;
+                $('#answer' + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass('right');;
             }
         };
         
         //  Show the number in the #timer-display tag.
-        $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
+        $('#timer-display').text('Time Remaining:  ' + number + ' Seconds');
 
         // show the question
         questionCounter ++; 
-        $(".question-section").show();
+        $('.question-section').show();
         
         // run the timer countdown process
         showQuestion = setInterval(decrement, 1000);
@@ -296,31 +296,31 @@ function displayQuestion() {
 // --------------------------------------------------------------------------------------
 function displayAnswer() {
     // displaying the answer so hide the question 
-    $(".question-section").hide();   
+    $('.question-section').hide();   
 
     // clear the Question Interval before showing the next question
     clearInterval(showQuestion);
 
     // set the answer information into the answer section and show it
-    $("#answer").text(message);
+    $('#answer').text(message);
 
     // When the wrong answer was selected or it timed out,  add in the actual answer information before showing the section
     if (!isAnswerRight) {
-        $("#answer").append('<p>The correct answer was:  ' + questionsAvialable[newQuestion].Answer + '.</p>');
+        $('#answer').append('<p>The correct answer was:  ' + questionsAvialable[newQuestion].Answer + '.</p>');
     }
 
     // show the full answer section
-    $(".answer-section").show();
+    $('.answer-section').show();
 
-    //There will be 10 questions   ****
-    if (questionCounter === 5) {
-        // Allow the Answer Information to display for 5 seconds  ****
-        showAnswer = setInterval(displayEndOfGame, 1000);
+    //There will be 10 questions   
+    if (questionCounter === 10) {
+        // Allow the Answer Information to display for 5 seconds  
+        showAnswer = setInterval(displayEndOfGame, 5000);
     }
     // show next question
     else {
-        // Allow the Answer Information to display for 5 seconds  ****
-        showAnswer = setInterval(displayQuestion, 1000);
+        // Allow the Answer Information to display for 5 seconds  
+        showAnswer = setInterval(displayQuestion, 5000);
     };
 
 };
@@ -335,24 +335,24 @@ function checkAnswer() {
     
      // check to see if the function was enacted because the timer expired
     if (number === 0) {
-        message = "Time is Up!!";
+        message = 'Time is Up!!';
         timeOut++;
     } 
     // an answer was picked before the time expired
     else {
         // validate the answer that was clicked was the correct answer 
         if (isAnswerRight) {    
-            message = "Correct!";
+            message = 'Correct!';
             correctAnswer++;    
         } 
         // an incorrect answer was selected
         else {     
-            message = "Nope!";
+            message = 'Nope!';
             incorrectAnswer++; 
         };
     };
 
-    // display the answer  ****
+    // display the answer  
     displayAnswer();
     
 };
@@ -368,9 +368,9 @@ function decrement() {
     number--;
 
     //  Show the number in the #timer-display tag.
-    $("#timer-display").text('Time Remaining:  ' + number + ' Seconds');
+    $('#timer-display').text('Time Remaining:  ' + number + ' Seconds');
 
-    // when time has run out, call the check answer function for processing the answer
+    // when time has run out, call the check answer function for processing the answer   
     if (number === 0) {
         checkAnswer();
     };
@@ -388,22 +388,22 @@ function displayEndOfGame() {
     clearInterval(showAnswer);
 
     // hide the answer section 
-    $(".answer-section").hide();
+    $('.answer-section').hide();
     
     // make sure the result section is empty before reloading with current results
-    $("#result-section").empty();
+    $('#result-section').empty();
     
     // display the results - 
-    $("#result-section").append('<p>Game Over.  Here are your results: </p>');
-    $("#result-section").append('<p>Correct Answers:  ' + correctAnswer + '</p>');
-    $("#result-section").append('<p>Incorrect Answers:  ' + incorrectAnswer + '</p>');
-    $("#result-section").append('<p>Unanswered:  ' + timeOut + '</p>');
-    $(".result-section").show();
+    $('#result-section').append('<p>Game Over.  Here are your results: </p>');
+    $('#result-section').append('<p>Correct Answers:  ' + correctAnswer + '</p>');
+    $('#result-section').append('<p>Incorrect Answers:  ' + incorrectAnswer + '</p>');
+    $('#result-section').append('<p>Unanswered:  ' + timeOut + '</p>');
+    $('.result-section').show();
 
     // show the start section with just the restart button visible
-    $("#start").hide();
-    $("#restart").show();
-    $(".start").show(); 
+    $('#start').hide();
+    $('#restart').show();
+    $('.start').show(); 
 
 };
 // --------------------------------------------------------------------------------------
@@ -433,7 +433,7 @@ $(document).ready(function() {
     // the click of an answer button
     $('body').on('click', '.answers', function () { 
 
-        if ($(this).hasClass("right")) {
+        if ($(this).hasClass('right')) {
             isAnswerRight = true;
         }
         else {
