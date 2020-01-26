@@ -23,12 +23,51 @@ body {
     height: 400px;  
   }
 
-  #id {
-    text-align: center;
-  }
+  .question-section {
+    background-color: darkslategrey;
+    margin-left: -15px;
+    margin-right: -15px;
   
+  }
+
   .answers {
     border: none;
   }
+
+  .answer-section {
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .result-section {
+    background-color: darkslategrey;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+
+  #id {
+    text-align: center;
+  }
+
+  #timer-display {
+    text-align: center; 
+    color: gold; 
+  }
+
+  #question {
+    text-align: left;
+    font-weight: bold;
+    color: whitesmoke
+  }
+
+  
 
   

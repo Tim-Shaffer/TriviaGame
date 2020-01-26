@@ -249,6 +249,9 @@ function displayQuestion() {
         //  the questioncounter will be used to access the array of indexes to then grab that index for the question from the available ones
         newQuestion = questionToAsk[questionCounter];
 
+        // reset the isAnswerRight 
+        isAnswerRight = false;
+
         // hide the start section if still being shown
         $('.start').hide(); 
     
@@ -314,13 +317,13 @@ function displayAnswer() {
 
     //There will be 10 questions   
     if (questionCounter === 10) {
-        // Allow the Answer Information to display for 5 seconds  
-        showAnswer = setInterval(displayEndOfGame, 5000);
+        // Allow the Answer Information to display for 3 seconds  
+        showAnswer = setInterval(displayEndOfGame, 3000);
     }
     // show next question
     else {
-        // Allow the Answer Information to display for 5 seconds  
-        showAnswer = setInterval(displayQuestion, 5000);
+        // Allow the Answer Information to display for 3 seconds  
+        showAnswer = setInterval(displayQuestion, 3000);
     };
 
 };
