@@ -64,7 +64,7 @@ const questionsAvialable = [
     Question: 'The character "Jar Jar Binks" made his first appearance in which "Star Wars" movie?',
     Answer: 'Episode 1 – The Phantom Menace',
     WrongAnswers: ['Episode 2 – Attack of the Clones', 'Episode 5 - The Empire Strikes Back', 'Episode 9 - The Rise of Skywalker', 'Episode 3 - Revenge of the Sith'],
-    AnswerImage: "./assets/images/Jar-Jar_Binks.jpg"
+    AnswerImage: "./assets/images/Jar-Jar-Binks.jpg"
 },
 {
     Question: "What was the name of the Clampetts' banker in 'The Beverly Hillbillies'?",
@@ -140,7 +140,7 @@ const questionsAvialable = [
 },
 {
     Question: 'How many championships do the 4 major sprts teams in Philly have?',
-    Answer: '8 - Sixers (3), Phillies (2), Flyers(2), Eagles (1) ',
+    Answer: '8',
     WrongAnswers: ['16', '6', '10' , '9'],
     AnswerImage: "./assets/images/sports-trophies.jpg"
 },

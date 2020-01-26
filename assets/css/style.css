@@ -11,6 +11,7 @@ body {
 
   .heading {
     background-color: darkslategrey;
+    max-height: 225px;
   }
 
   .main-target {
