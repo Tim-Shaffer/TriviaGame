@@ -1,154 +1,184 @@
-// **** Questions *****
+// **** Questions ****
 const questionsAvialable = [
 {
     Question: 'Which "Toy Story" character was voiced by Don Rickles?',
     Answer: 'Mr. Potatoe Head',
-    WrongAnswers: ['Woody', 'Rex', 'Buzz Lightyear' , 'Hamm']
+    WrongAnswers: ['Woody', 'Rex', 'Buzz Lightyear' , 'Hamm'],
+    AnswerImage: "./assets/images/mr-potato-head.jpg"
 },
 {
     Question: 'In the 1971 film "Willy Wonka & the Chocolate Factory", who played Willy Wonka?',
     Answer: 'Gene Wilder',
-    WrongAnswers: ['Johnny Depp', 'Jack Albertson', 'Richard Pryor', 'David Kelly']
+    WrongAnswers: ['Johnny Depp', 'Jack Albertson', 'Richard Pryor', 'David Kelly'],
+    AnswerImage: "./assets/images/willy-wonka-wilder.jpg"
 },
 {
     Question: 'How many rooms are there, not including the hallways and the set of stairs, in the board game "Clue"?',
     Answer: '9',
-    WrongAnswers: ['6', '8', '10' , '7']
+    WrongAnswers: ['6', '8', '10' , '7'],
+    AnswerImage: "./assets/images/clue.jpg"
 },
 {
     Question: 'How many points is the "Z" tile worth in Scrabble?',
     Answer: '10',
-    WrongAnswers: ['9', '8', '7' , '2']
+    WrongAnswers: ['9', '8', '7' , '2'],
+    AnswerImage: "./assets/images/z-tile.jpg"
 },
 {
     Question: 'What is the fastest land animal?',
     Answer: 'Cheetah',
-    WrongAnswers: ['Horse', 'Jaguar', 'Ostrich' , 'Hyena']
+    WrongAnswers: ['Horse', 'Jaguar', 'Ostrich' , 'Hyena'],
+    AnswerImage: "./assets/images/Cheetah.jpg"
 },
 {
     Question: 'On the show "Mike and Molly", how did Mike and Molly meet?',
-    Answer: 'At an Overeaters Anonymous meeting',
-    WrongAnswers: ['He responds to an emergency call at her home', 'He arrests her mother', 'He arrests her sister' , 'She teaches his son']
+    Answer: 'at an Overeaters Anonymous meeting',
+    WrongAnswers: ['he responds to an emergency call at her home', 'he arrests her mother', 'he arrests her sister' , 'she teaches his son'],
+    AnswerImage: "./assets/images/mike-n-molly.jpg"
 },
 {
     Question: 'Who wrote and recorded the theme song for the "Big Bang Theory"?',
     Answer: 'Barenaked Ladies',
-    WrongAnswers: ['Taylor Swift', 'R.E.M.', 'Smashing Pumpkins' , 'Three Dog Night']
+    WrongAnswers: ['Taylor Swift', 'R.E.M.', 'Smashing Pumpkins' , 'Three Dog Night'],
+    AnswerImage: "./assets/images/Big-Bang-Theme.jpg"
 },
 {
     Question: ' Which American president appeared on the show “Laugh-in”?',
     Answer: 'Richard Nixon',
-    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush']
+    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush'],
+    AnswerImage: "./assets/images/nixon-laugh-in.jpg"
 },
 {
     Question: 'Who wrote the Sinead O`Connor hit "Nothing Compares 2 U"?',
     Answer: 'Prince',
-    WrongAnswers: ['Sinead O`Connor', 'Madonna', 'Debbie Gibson' , 'Tiffany']
+    WrongAnswers: ['Sinead O`Connor', 'Madonna', 'Debbie Gibson' , 'Tiffany'],
+    AnswerImage: "./assets/images/prince.jpg"
 },
 {
     Question: 'Daniel Craig made his debut as James Bond in 2006 in what movie?',
     Answer: 'Casino Royale',
-    WrongAnswers: ['Quantum of Solace', 'Skyfall', 'Spectre' , 'No Time to Die']
+    WrongAnswers: ['Quantum of Solace', 'Skyfall', 'Spectre' , 'No Time to Die'],
+    AnswerImage: "./assets/images/casino-royale.jpg"
 },
 {
     Question: 'The character "Jar Jar Binks" made his first appearance in which "Star Wars" movie?',
     Answer: 'Episode 1 – The Phantom Menace',
-    WrongAnswers: ['Episode 2 – Attack of the Clones', 'Episode 5 - The Empire Strikes Back', 'Episode 9 - The Rise of Skywalker', 'Episode 3 - Revenge of the Sith']
+    WrongAnswers: ['Episode 2 – Attack of the Clones', 'Episode 5 - The Empire Strikes Back', 'Episode 9 - The Rise of Skywalker', 'Episode 3 - Revenge of the Sith'],
+    AnswerImage: "./assets/images/Jar-Jar_Binks.jpg"
 },
 {
     Question: "What was the name of the Clampetts' banker in 'The Beverly Hillbillies'?",
     Answer: 'Milburn Drysdale',
-    WrongAnswers: ['Jethro Bodine', 'Daisy Moses', 'Margaret Drysdale' , 'Jane Hathaway']
+    WrongAnswers: ['Jethro Bodine', 'Daisy Moses', 'Margaret Drysdale' , 'Jane Hathaway'],
+    AnswerImage: "./assets/images/bev-hillbillies.jpg"
 },
 {
     Question: "What was Ted Danson's profession when he guest starred on the sitcom 'Taxi'?",
     Answer: 'Hairdresser',
-    WrongAnswers: ['Doctor', 'Cab Driver', 'Electrician' , 'Plumber']
+    WrongAnswers: ['Doctor', 'Cab Driver', 'Electrician' , 'Plumber'],
+    AnswerImage: "./assets/images/taxi-ted.jpg"
 },
 {
-    Question: 'On the show "The Simpsons", Marge Simpson has the same maiden name as which former First Lady. ',
+    Question: 'On the show "The Simpsons", Marge Simpson has the same maiden name as which former First Lady?',
     Answer: 'Jacqueline "Bouvier" Kennedy',
-    WrongAnswers: ['Hillary "Rodham" Clinton', 'Laura "Welch" Bush', 'Barbara "Pierce" Bush' , 'Nancy "Davis" Reagan']
+    WrongAnswers: ['Hillary "Rodham" Clinton', 'Laura "Welch" Bush', 'Barbara "Pierce" Bush' , 'Nancy "Davis" Reagan'],
+    AnswerImage: "./assets/images/jacqui-bouvier.jpg"
 },
 {
     Question: "What was the name of Arnold's fish on 'Different Strokes'?",
     Answer: 'Abraham',
-    WrongAnswers: ['Willis', 'Drummond', 'Adelaide' , 'Charlene DuPrey']
+    WrongAnswers: ['Willis', 'Drummond', 'Adelaide' , 'Charlene DuPrey'],
+    AnswerImage: "./assets/images/abraham.jpg"
 },
 {
     Question: "On the sitcom Three's Company, what is the name 'Chrissy' short for?",
     Answer: 'Christmas',
-    WrongAnswers: ['Christine', 'Christina', 'Christabelle' , 'Chris']
+    WrongAnswers: ['Christine', 'Christina', 'Christabelle' , 'Chris'],
+    AnswerImage: "./assets/images/ThreesCompany.jpg"
 },
 {
     Question: "What was Roscoe's dogs name on the Dukes of Hazzard?",
     Answer: 'Flash',
-    WrongAnswers: ['Fido', 'Fred', 'Felix' , 'Hank']
+    WrongAnswers: ['Fido', 'Fred', 'Felix' , 'Hank'],
+    AnswerImage: "./assets/images/flash.jpg"
 },
 {
     Question: "In the TV show 'Family Ties' who was Alex P. Keaton's idol?",
     Answer: 'Richard Nixon',
-    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush']
+    WrongAnswers: ['Ronald Reagan', 'Jimmy Carter', 'Bill Clinton' , 'George H. W. Bush'],
+    AnswerImage: "./assets/images/alex-p-keaton.jpg"
 },
 {
     Question: "On the TV show ALF, what was ALF's real name?",
     Answer: 'Gordon Shumway',
-    WrongAnswers: ['George Clooney', 'Greg Kinnear', 'Gabriel Iglesias' , 'Gavin Rossdale']
+    WrongAnswers: ['George Clooney', 'Greg Kinnear', 'Gabriel Iglesias' , 'Gavin Rossdale'],
+    AnswerImage: "./assets/images/Alf.jpg"
 },
 {
-    Question: "What was the name of the bar/restaurant on the TV show THREE'S COMPANY?",
+    Question: "What was the name of the bar/restaurant on the TV show Three's Company?",
     Answer: 'Regal Beagle',
-    WrongAnswers: ['Royal Dog', 'Melvilles', 'Boars Nest' , 'The Hard Rock Cafe']
+    WrongAnswers: ['Royal Dog', 'Melvilles', 'Boars Nest' , 'The Hard Rock Cafe'],
+    AnswerImage: "./assets/images/regal-beagle.jpeg"
 },
 {
     Question: "Who are you likely to meet on Philadelphia's Elfreth's Alley?",
     Answer: 'Betsy Ross',
-    WrongAnswers: ['Kevin Bacon', 'Andy Reid', 'Brad Lidge' , 'Elmo']
+    WrongAnswers: ['Kevin Bacon', 'Andy Reid', 'Brad Lidge' , 'Elmo'],
+    AnswerImage: "./assets/images/Betsy-Ross-House.jpg"
 },
 {
     Question: 'Where in Philadelphia is Benjamin Franklin buried?',
     Answer: 'Christ Church',
-    WrongAnswers: ['Independence Hall', 'The Art Museum', 'City Hall' , 'University of Pennsylvania']
+    WrongAnswers: ['Independence Hall', 'The Art Museum', 'City Hall' , 'University of Pennsylvania'],
+    AnswerImage: "./assets/images/here-lies-ben-franklin.jpg"
 },
 {
     Question: 'What is exhibited at the Mutter Museum?',
     Answer: 'Medical Oddities',
-    WrongAnswers: ['Insects', 'Sheep', 'Cattle' , 'Dogs']
+    WrongAnswers: ['Insects', 'Sheep', 'Cattle' , 'Dogs'],
+    AnswerImage: "./assets/images/mutter-museum.jpg"
 },
 {
     Question: 'How many championships do the 4 major sprts teams in Philly have?',
-    Answer: '16',
-    WrongAnswers: ['11', '6', '10' , '9']
+    Answer: '8 - Sixers (3), Phillies (2), Flyers(2), Eagles (1) ',
+    WrongAnswers: ['16', '6', '10' , '9'],
+    AnswerImage: "./assets/images/sports-trophies.jpg"
 },
 {
     Question: 'What year did all the major Philly sports teams make their respective championships?',
     Answer: '1980',
-    WrongAnswers: ['2000', '1983', '1974' , '1960']
+    WrongAnswers: ['2000', '1983', '1974' , '1960'],
+    AnswerImage: "./assets/images/4-sports.jpg"
 },
 {
     Question: 'Who scored 100 points in a single game as a 76er?',
     Answer: 'Wilt Chamberlain',
-    WrongAnswers: ['Moses Malone', 'Allen Iverson', 'Kobe Bryant' , 'Julius Erving']
+    WrongAnswers: ['Moses Malone', 'Allen Iverson', 'Kobe Bryant' , 'Julius Erving'],
+    AnswerImage: "./assets/images/wilt.png"
 },
 {
     Question: 'What was the name of the Curse that the Phillies ended in 2008?',
     Answer: ' Curse of William Penn',
-    WrongAnswers: ['Curse of the Bambino', 'Curse of 1983', 'Curse of Philly' , 'The Mummers Curse']
+    WrongAnswers: ['Curse of the Bambino', 'Curse of 1983', 'Curse of Philly' , 'The Mummers Curse'],
+    AnswerImage: "./assets/images/curse_of_william_penn.jpg"
 },
 {
-    Question: 'Who was the only player to lose a Stanley Cup and win series MVP?',
+    Question: 'Who was the only Flyers player to lose a Stanley Cup and win series MVP?',
     Answer: 'Ron Hextall',
-    WrongAnswers: ['Wayne Gretzky', 'Bobby Clarke', 'Eric Lindross' , 'Simon Gagne']
+    WrongAnswers: ['Wayne Gretzky', 'Bobby Clarke', 'Eric Lindross' , 'Simon Gagne'],
+    AnswerImage: "./assets/images/hextall-smythe.jpg"
 },
 {
     Question: 'On the TV show "Everybody Loves Raymond", what type of reenactment does Frank participate in?',
     Answer: 'Civil War Reenactment',
-    WrongAnswers: ['World War II Reenactment', 'Korean War Reenactment', 'Renaissance Reenactment' , 'Reenactment of The Last Supper']
+    WrongAnswers: ['World War II Reenactment', 'Korean War Reenactment', 'Renaissance Reenactment' , 'Reenactment of The Last Supper'],
+    AnswerImage: "./assets/images/frank-civil-war.jpg"
 },
 {
     Question: 'On the TV show "Everybody Loves Raymond", what state did Marie and Frank once forget Robert in?',
     Answer: 'New Mexico',
-    WrongAnswers: ['Oklahoma', 'Utah', 'Florida' , 'Nevada']
+    WrongAnswers: ['Oklahoma', 'Utah', 'Florida' , 'Nevada'],
+    AnswerImage: "./assets/images/traffic-cop-timmy.jpg"
 }
 ];
 // --------------------------------------------------------------------------------------
@@ -274,7 +304,7 @@ function displayQuestion() {
         // populate the remaining answers with the incorrect answers and make sure they do not have the 'right' class designation
         for (i=0; i < questionsAvialable[newQuestion].WrongAnswers.length; i++) {
             if (i != rightAnswer) {
-                $('#answer' + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass('right');;
+                $('#answer' + i).text(questionsAvialable[newQuestion].WrongAnswers[i]).removeClass('right');
             }
         };
         
@@ -310,12 +340,15 @@ function displayAnswer() {
     // When the wrong answer was selected or it timed out,  add in the actual answer information before showing the section
     if (!isAnswerRight) {
         $('#answer').append('<p>The correct answer was:  ' + questionsAvialable[newQuestion].Answer + '.</p>');
-    }
+    };
+
+    // show the correct answer image 
+    $("#answer").append('<br><img src="' + questionsAvialable[newQuestion].AnswerImage + '" class="answer-image">');
 
     // show the full answer section
     $('.answer-section').show();
 
-    //There will be 10 questions   
+    //There will be 10 questions 
     if (questionCounter === 10) {
         // Allow the Answer Information to display for 3 seconds  
         showAnswer = setInterval(displayEndOfGame, 3000);

@@ -42,6 +42,11 @@ body {
 
   }
 
+  .answer-image {
+    height: 200px;
+    width: 200px;
+  }
+
   .result-section {
     background-color: darkslategrey;
     margin-left: -15px;
