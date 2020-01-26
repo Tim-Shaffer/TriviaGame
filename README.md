@@ -27,18 +27,23 @@ JavaScript Trivia Game
 1. A Question will be shown with four possible answers.
 1. Click the Answer you think is correct before the Timer runs out.
 	1. If a correct answer is clicked - "Correct!" is Displayed.
+	![Image of Correct Screenshot](/assets/images/Correct_Screen.jpg)
+	1. Anything other than a correct answer will also display the correct answer!  
+	*no need to show the correct answer when it was guessed*
 	1. If time runs out, "Time is Up!!" is Displayed. 
+	![Image of Times Up Screenshot](/assets/images/TimesUp_Screen.jpg)
 	1. If a wrong answer is clicked, "Nope!" is Displayed.
-    1. Anything other than a correct answer will also display the correct answer!  
-        *no need to show the correct answer when it was guessed*
+	![Image of Incorrect Screenshot](/assets/images/Incorrect_Screen.jpg)
+
 1. After the Answer information is displayed for a few seconds, the next question is displayed without any user action.
 1. If all the questions have been asked, a Final Screen will be displayed after the last answer information.
 	1. The final screen will display the number of correct answers, incorrect answers, and unanswered questions. 
     1. An option to restart the game is presented.
+	![Image of Final Screenshot](/assets/images/Results_Screen.jpg)
 
 #### Technical Details
 * There is a definitive number of questions available, but the questions selected for a game are selected at random.
-* Ten questions will be asked.
+* Ten questions will be asked for any round.
 * The list of answers for each question will have the correct answer being randomly displayed in any of the four possible answers.
 
 
